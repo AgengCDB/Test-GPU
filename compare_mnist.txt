@@ -1,0 +1,24 @@
+Microsoft Windows [Version 10.0.22631.3880]
+(c) Microsoft Corporation. All rights reserved.
+
+(kepiting) D:\PythonProject\Test-GPU>C:/Users/ageng/anaconda3/envs/kepiting/python.exe d:/PythonProject/Test-GPU/compare_mnist.py
+2024-08-05 15:06:01.362057: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-05 15:06:01.967700: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 1653 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+Epoch 5/5 - Elapsed time: 8.22 seconds2024-08-05 15:06:45.865068: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+Epoch 5/5 - Elapsed time: 7.64 secondsime: 40.40 seconds
+
+Training time on CPU: 41.35 seconds
+Accuracy on CPU: 0.98928332
+Loss on CPU: 0.03425034
+
+Training time on GPU: 40.41 seconds
+Accuracy on GPU: 0.98883331
+Loss on GPU: 0.03284709
+
+Speedup: GPU is 1.02 times faster than CPU
+Time Difference: GPU is faster 0.94 seconds
+CPU accuracy is better by 0.00045002
+CPU loss is better by 0.00140325
+
+(kepiting) D:\PythonProject\Test-GPU>

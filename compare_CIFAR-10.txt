@@ -1,0 +1,27 @@
+(kepiting) D:\PythonProject\Test-GPU>C:/Users/ageng/anaconda3/envs/kepiting/python.exe d:/PythonProject/Test-GPU/compare_CIFAR-10.py
+WARNING:tensorflow:From d:\PythonProject\Test-GPU\compare_CIFAR-10.py:8: get_memory_usage (from tensorflow.python.framework.config) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.config.experimental.get_memory_info(device)['current'] instead.
+2024-08-05 15:12:27.207767: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-05 15:12:28.108216: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 1653 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+0
+Epoch 5/5 - Elapsed time: 28.87 seconds2024-08-05 15:15:00.429711: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 614400000 exceeds 10% of free system memory.
+2024-08-05 15:15:03.345888: I tensorflow/stream_executor/cuda/cuda_dnn.cc:384] Loaded cuDNN version 8100
+2024-08-05 15:15:29.987004: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+Epoch 5/5 - Elapsed time: 11.51 secondsme: 101.17 seconds
+
+Training time on CPU: 149.58 seconds
+Accuracy on CPU: 0.71274000
+Loss on CPU: 0.82085186
+
+Training time on GPU: 101.18 seconds
+Accuracy on GPU: 0.71373999
+Loss on GPU: 0.82054883
+
+Speedup: GPU is 1.48 times faster than CPU
+Time Difference: GPU is faster by 48.40 seconds
+GPU accuracy is better by 0.00099999
+CPU loss is better by 0.00030303
+
+(kepiting) D:\PythonProject\Test-GPU>

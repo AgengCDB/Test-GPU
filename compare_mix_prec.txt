@@ -1,0 +1,23 @@
+Microsoft Windows [Version 10.0.22631.3880]
+(c) Microsoft Corporation. All rights reserved.
+
+(kepiting) D:\PythonProject\Test-GPU>C:/Users/ageng/anaconda3/envs/kepiting/python.exe d:/PythonProject/Test-GPU/compare_mix_prec.py
+2024-08-05 15:32:52.906837: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-08-05 15:32:53.556210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1532] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 1653 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+Epoch 5/5 - Elapsed time: 4.85 seconds
+
+Training time on CPU: 16.82 seconds
+Accuracy on CPU: 0.89074999
+Loss on CPU: 0.29074094
+
+Training time on GPU: 26.84 seconds
+Accuracy on GPU: 0.89013332
+Loss on GPU: 0.29605860
+
+Speedup: GPU is 0.63 times faster than CPU
+Time Difference: CPU is faster by 10.02 seconds
+CPU accuracy is better by 0.00061667
+GPU loss is better by 0.00531766
+
+(kepiting) D:\PythonProject\Test-GPU>
